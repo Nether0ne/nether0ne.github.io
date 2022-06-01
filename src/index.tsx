@@ -30,7 +30,7 @@ const theme = createTheme({
 });
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
     <ThemeProvider {...{ theme }}>
       <GlobalStyles />
       <CssBaseline />
