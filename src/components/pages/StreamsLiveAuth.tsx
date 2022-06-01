@@ -5,7 +5,7 @@ import StreamsLiveIcon from "../icons/StreamsLive";
 const StreamsLiveAuthPage: FC = () => {
   let success = false;
   const address = window.location.href;
-  const params = address.substring(address.indexOf("#") + 1).split("&");
+  const params = address.substring(address.indexOf("#", address.indexOf("#") + 1) + 1).split("&");
 
   for (const param of params) {
     const [key, value] = param.split("=");

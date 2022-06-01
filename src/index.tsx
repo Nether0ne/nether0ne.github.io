@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import App from "./components/pages/App";
 import { GlobalStyles } from "twin.macro";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
@@ -30,12 +30,12 @@ const theme = createTheme({
 });
 
 root.render(
-  <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+  <HashRouter>
     <ThemeProvider {...{ theme }}>
       <GlobalStyles />
       <CssBaseline />
 
       <App />
     </ThemeProvider>
-  </BrowserRouter>
+  </HashRouter>
 );

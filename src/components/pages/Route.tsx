@@ -6,7 +6,7 @@ import { Box, CircularProgress, Typography } from "@mui/material";
 const routes = {
   "streams-live-coinbase": {
     href: "https://commerce.coinbase.com/checkout/5df366b5-f6d6-4dab-8988-189946b1a7c3",
-    label: "Stream Live Contribution via Coinbase",
+    label: "Streams Live Contribution via Coinbase",
   },
   // "streams-live": {
   //   href: "",
