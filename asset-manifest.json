@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "https://nether0ne.github.io/static/js/main.04108397.js",
+    "main.js": "https://nether0ne.github.io/static/js/main.e8c4d209.js",
     "index.html": "https://nether0ne.github.io/index.html",
-    "main.04108397.js.map": "https://nether0ne.github.io/static/js/main.04108397.js.map"
+    "main.e8c4d209.js.map": "https://nether0ne.github.io/static/js/main.e8c4d209.js.map"
   },
   "entrypoints": [
-    "static/js/main.04108397.js"
+    "static/js/main.e8c4d209.js"
   ]
 }
