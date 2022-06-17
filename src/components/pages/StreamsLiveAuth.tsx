@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import StreamsLiveIcon from "../icons/StreamsLive";
 
 const StreamsLiveAuthPage: FC = () => {
-  let success = false;
+  let authorized = false;
   const address = window.location.href;
   const params = address.substring(address.indexOf("#", address.indexOf("#") + 1) + 1).split("&");
 
@@ -11,9 +11,13 @@ const StreamsLiveAuthPage: FC = () => {
     const [key, value] = param.split("=");
 
     if (key === "access_token" && value) {
-      success = true;
+      authorized = true;
     }
   }
+
+  useEffect(() => {
+    document.title = "Streams Live Authorization";
+  });
 
   return (
     <Box
@@ -34,11 +38,13 @@ const StreamsLiveAuthPage: FC = () => {
           gap: "2rem",
         }}
       >
-        <StreamsLiveIcon sx={{ fontSize: "10rem", color: success ? "primary.main" : "#e64c4c" }} />
+        <StreamsLiveIcon
+          sx={{ fontSize: "10rem", color: authorized ? "primary.main" : "#e64c4c" }}
+        />
         <Typography variant="h3">Streams Live</Typography>
       </Box>
       <Typography variant="h4">
-        {success ? "Your account was successfully linked" : "Failed linking your account"}
+        {authorized ? "Your account was successfully linked" : "Failed linking your account"}
       </Typography>
     </Box>
   );
