@@ -80,12 +80,6 @@ const StreamsLive: FC = () => {
             <Image key={alt} src={`${src}`} alt={alt} />
           ))}
         </Carousel>
-        <Image
-          src={"assets/images/streams-live/main.png"}
-          alt="Streams Live"
-          wrapperSx={{ borderRadius: "10px", alignSelf: "center", display: "flex" }}
-          imgSx={{ borderRadius: "10px", boxShadow: "5px 5px 5px black" }}
-        />
       </Grid>
     </Grid>
   );
