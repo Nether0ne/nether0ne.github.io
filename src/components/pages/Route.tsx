@@ -12,6 +12,10 @@ const routes = {
     href: "https://commerce.coinbase.com/checkout/5df366b5-f6d6-4dab-8988-189946b1a7c3",
     label: "Streams Live Contribution via Coinbase",
   },
+  "streams-live-paypal": {
+    href: "https://www.paypal.com/donate/?hosted_button_id=TNBVEDZBWMSLW",
+    label: "Streams Live Contribution via Paypal",
+  },
   "streams-live-chrome": {
     href: "https://chrome.google.com/webstore/detail/streams-live/pldknabhakkeilkdlgihigokomjjnmmg",
     label: "Streams Live at Chrome Web Store",
